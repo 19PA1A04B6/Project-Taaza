@@ -1,4 +1,8 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
+<?php
 session_start();
 require_once "includes/connection.php";
 
@@ -135,3 +139,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Close the database connection
 mysqli_close($conn);
 ?>
+
